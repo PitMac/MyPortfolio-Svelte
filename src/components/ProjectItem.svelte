@@ -18,7 +18,7 @@
     {
       href: "https://activityweb.vercel.app/",
       src: Activity,
-      alt: "Other Project",
+      alt: "Activity Page",
     },
     {
       href: "https://github.com/PitMac/FreeGame-App-RN",
