@@ -3,9 +3,10 @@
   let FreeGames = "/assets/projects/freegamesapp.webp";
   let Anime = "/assets/projects/animeapp.webp";
   let DisneyC = "/assets/projects/disneyCharacters.webp";
+  let Activity = "/assets/projects/activity.webp";
   const projects = [
     {
-      href: "https://github.com/PitMac/DisneyCharacters-React",
+      href: "https://disney-characters.vercel.app/",
       src: DisneyC,
       alt: "Disney Characters",
     },
@@ -15,8 +16,8 @@
       alt: "Ecovid App",
     },
     {
-      href: "https://github.com/PitMac/ECovid-App-Flutter",
-      src: Ecovid,
+      href: "https://activityweb.vercel.app/",
+      src: Activity,
       alt: "Other Project",
     },
     {
