@@ -88,3 +88,7 @@ h3 {
     font-size: 1.9rem;
   }
 }
+
+.colorText {
+  color: var(--secondary-color);
+}

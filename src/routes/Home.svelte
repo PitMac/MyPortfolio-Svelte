@@ -57,10 +57,6 @@
     display: flex;
   }
 
-  .colorText {
-    color: var(--secondary-color);
-  }
-
   .buttonsSection {
     margin-top: 20px;
     display: flex;
