@@ -1,5 +1,6 @@
 <script>
   import SkillItem from "../components/SkillItem.svelte";
+  let Photo = "assets/MyPhoto.png";
   import "aos/dist/aos.css";
 </script>
 
@@ -15,7 +16,7 @@
       projects with <span class="colorText">ReactJS</span>,{" "}
       <span class="colorText">Flutter</span>,{" "}
       <span class="colorText">Svelte</span>, and{" "}
-      <span class="colorText">NodeJS</span>. I am also prepared to learn{" "}
+      <span class="colorText">NodeJS</span>, etc. I am also prepared to learn{" "}
       <span class="colorText">new technologies</span> without any problem 👾. My
       favorite hobbies are listening to{" "}
       <span class="colorText">music</span> 🎶 and playing{" "}
@@ -24,12 +25,7 @@
     <h2 class="skillTitle">My Skills:</h2>
     <SkillItem />
   </section>
-  <img
-    data-aos="fade-right"
-    class="imgLogo2"
-    src="https://avatars.githubusercontent.com/u/81378436?v=4"
-    alt="Logo"
-  />
+  <img data-aos="fade-right" class="imgLogo2" src={Photo} alt="Logo" />
 </div>
 
 <style>
@@ -58,6 +54,10 @@
     color: var(--secondary-color);
   }
 
+  .imgLogo2 {
+    width: 100%;
+  }
+
   @media (max-width: 1305px) {
     .about {
       grid-template-columns: 1fr;
@@ -76,6 +76,7 @@
     .imgLogo2 {
       padding: 30px 0px;
       justify-self: center;
+      width: 60%;
     }
     @media (max-height: 800px) {
       .about {
