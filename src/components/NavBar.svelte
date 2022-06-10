@@ -1,12 +1,9 @@
 <script>
   let navButton = false;
   const handleNav = () => {
-    const $ = (selector) => document.querySelector(selector);
     if (!navButton) {
-      // $(".menu").classList.toggle("show");
       navButton = true;
     } else {
-      // $(".menu").classList.toggle("show");
       navButton = false;
     }
   };
@@ -14,16 +11,16 @@
 
 <nav class={`menu${navButton ? " show" : ""}`}>
   <ul class="menuNav">
-    <li class="navItem">
+    <li on:click={handleNav} class="navItem">
       <a class="menuItem" href="#Home"> Home </a>
     </li>
-    <li class="navItem">
+    <li on:click={handleNav} class="navItem">
       <a class="menuItem" href="#About"> About </a>
     </li>
-    <li class="navItem">
+    <li on:click={handleNav} class="navItem">
       <a class="menuItem" href="#Projects"> Projects </a>
     </li>
-    <li class="navItem">
+    <li on:click={handleNav} class="navItem">
       <a class="menuItem" href="#Contact"> Contact </a>
     </li>
   </ul>
