@@ -4,7 +4,7 @@
   let React = "/assets/skills/react.svg";
   let Node = "/assets/skills/node.svg";
   let Svelte = "/assets/skills/svelte.svg";
-  let Vue = "/assets/skills/vue.svg";
+  let Tauri = "/assets/skills/tauri.svg";
 
   // Languages
   let Javascript = "/assets/skills/languages/javascript.svg";
@@ -46,8 +46,8 @@
       alt: "Node",
     },
     {
-      src: Vue,
-      alt: "VueJS",
+      src: Tauri,
+      alt: "Tauri",
     },
   ];
   const languages = [
