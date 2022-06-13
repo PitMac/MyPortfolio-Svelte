@@ -32,9 +32,9 @@
       alt: "Activity Page",
     },
     {
-      href: "https://github.com/PitMac/ECovid-App-Flutter",
-      src: Ecovid,
-      alt: "Disney Charactes",
+      href: "https://github.com/PitMac/Anime-App-Flutter",
+      src: Anime,
+      alt: "AnimeApp",
     },
   ];
 </script>
