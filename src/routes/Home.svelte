@@ -1,7 +1,9 @@
 <script>
+  // @ts-nocheck
   let Ellipse = "assets/Ellipse1.png";
   let CV = "../../public/assets/CV.pdf";
   import "aos/dist/aos.css";
+  import Typewriter from "svelte-typewriter";
 </script>
 
 <img class="ellipse" src={Ellipse} alt="ellipse" />
@@ -14,9 +16,12 @@
   />
   <div class="homeSection">
     <section>
-      <h1 class="title">
-        Hi, I'm <span class="colorText">Jhon PitMac</span>
-      </h1>
+      <Typewriter interval={150} keepCursorOnFinish>
+        <h1 class="title">
+          Hi, I'm <span class="colorText">Jhon PitMac</span>
+        </h1>
+      </Typewriter>
+
       <h3 class="subtitle">
         A <span class="colorText">FullStack</span> Developer
       </h3>
@@ -50,6 +55,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    --cursor-color: var(--secondary-color);
+    --cursor-width: 20px;
   }
 
   .imgLogo {
