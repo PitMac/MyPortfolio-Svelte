@@ -10,7 +10,7 @@
     {
       href: "https://pitkemon.vercel.app/",
       src: PitKemon,
-      alt: "Disney Characters",
+      alt: "PitKemon",
     },
     {
       href: "https://github.com/PitMac/FreeGames-App-Flutter",
