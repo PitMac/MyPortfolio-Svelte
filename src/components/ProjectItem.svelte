@@ -4,27 +4,28 @@
   let Anime = "/assets/projects/animeapp.webp";
   let DisneyC = "/assets/projects/disneyCharacters.webp";
   let Activity = "/assets/projects/activity.webp";
-  let MdRun = "/assets/projects/mdRun.webp";
+  let RunMD = "/assets/projects/runmd.webp";
+  let PitKemon = "/assets/projects/pitkemon.webp";
   const projects = [
     {
-      href: "https://md-run.vercel.app/",
-      src: MdRun,
-      alt: "MdRun",
+      href: "https://pitkemon.vercel.app/",
+      src: PitKemon,
+      alt: "Disney Characters",
+    },
+    {
+      href: "https://github.com/PitMac/FreeGames-App-Flutter",
+      src: FreeGames,
+      alt: "FreeGamesApp",
+    },
+    {
+      href: "https://run-md.vercel.app/",
+      src: RunMD,
+      alt: "RunMD",
     },
     {
       href: "https://github.com/PitMac/ECovid-App-Flutter",
       src: Ecovid,
       alt: "Ecovid App",
-    },
-    {
-      href: "https://disney-characters.vercel.app/",
-      src: DisneyC,
-      alt: "Disney Characters",
-    },
-    {
-      href: "https://github.com/PitMac/FreeGame-App-RN",
-      src: FreeGames,
-      alt: "FreeGamesApp",
     },
     {
       href: "https://activityweb.vercel.app/",
