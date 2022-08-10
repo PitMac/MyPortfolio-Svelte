@@ -1,7 +1,7 @@
 <script>
   // @ts-nocheck
   let Ellipse = "assets/Ellipse1.png";
-  let CV = "../../public/assets/CV.pdf";
+  let CV = "../../assets/CV.pdf";
   import "aos/dist/aos.css";
   import Typewriter from "svelte-typewriter";
 </script>
@@ -26,7 +26,7 @@
         A <span class="colorText">FullStack</span> Developer
       </h3>
       <section class="buttonsSection">
-        <a href={CV} class="btn" download="CV.pdf"> CV </a>
+        <a href={CV} class="btn" download="CV"> CV </a>
         <a target="_blank" href="https://github.com/PitMac" class="btn">
           GITHUB
         </a>
