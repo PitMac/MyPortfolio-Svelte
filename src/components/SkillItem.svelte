@@ -181,6 +181,7 @@
     padding: 7px;
     margin: 5px 5px 0 0;
   }
+
   .skillImg {
     height: 30px;
     margin: 0px 5px;

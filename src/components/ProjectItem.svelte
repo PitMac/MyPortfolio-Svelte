@@ -88,10 +88,12 @@
     padding: 20px 20px;
     text-align: center;
     text-decoration: none;
+    transition: all 1s;
   }
 
   .projectItem:hover {
     background-color: #0d304d36;
+    color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
   }
 
