@@ -1,11 +1,14 @@
 <script>
   import { onMount } from "svelte";
+  import { Router, Route } from "svelte-routing";
   import NavBar from "./components/NavBar.svelte";
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
   import Projects from "./routes/Projects.svelte";
   import AOS from "aos";
   import Contact from "./routes/Contact.svelte";
+  import AllProjects from "./routes/projects/AllProjects.svelte";
+  import Project from "./routes/projects/Project.svelte";
 
   onMount(() => {
     AOS.init();
@@ -24,14 +27,24 @@
 </script>
 
 <main>
-  <div class={`alert${alert ? " showAlert" : ""}`}>
-    <h3>Copied Email</h3>
-  </div>
-  <NavBar />
-  <Home />
-  <About />
-  <Projects />
-  <Contact {copyEmail} />
+  <Router>
+    <div>
+      <Route path="projects"><AllProjects /></Route>
+      <Route path="projects/:name" let:params
+        ><Project name={params.name} /></Route
+      >
+      <Route path="/">
+        <div class={`alert${alert ? " showAlert" : ""}`}>
+          <h3>Copied Email</h3>
+        </div>
+        <NavBar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact {copyEmail} />
+      </Route>
+    </div>
+  </Router>
 </main>
 
 <style>

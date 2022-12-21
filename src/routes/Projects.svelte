@@ -1,6 +1,7 @@
 <script>
-  import ProjectItem from "../components/ProjectItem.svelte";
   import "aos/dist/aos.css";
+  import ProjectList from "../components/ProjectList.svelte";
+  import { Link } from "svelte-routing";
 </script>
 
 <div id="Projects">
@@ -8,10 +9,10 @@
     <span class="colorText">My Projects</span>
   </h2>
   <br />
-  <ProjectItem />
-  <a target="_blank" href="https://github.com/PitMac" class="btn moreProjects">
-    More projects...
-  </a>
+  <ProjectList limit={true} />
+  <div class="btn moreProjects">
+    <Link to="/projects">More projects...</Link>
+  </div>
 </div>
 
 <style>
@@ -20,6 +21,11 @@
     padding-top: 40px;
     flex-direction: column;
     height: auto;
+  }
+
+  :global(a) {
+    text-decoration: none;
+    color: var(--secondary-color);
   }
 
   .moreProjects {

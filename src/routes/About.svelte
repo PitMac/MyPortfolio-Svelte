@@ -1,6 +1,6 @@
 <script>
-  import SkillItem from "../components/SkillItem.svelte";
-  let Photo = "assets/MyPhoto.png";
+  import SkillList from "./../components/SkillList.svelte";
+  import Photo from "../../public/assets/MyPhoto.webp";
   import "aos/dist/aos.css";
 </script>
 
@@ -23,13 +23,14 @@
       <span class="colorText">videogames</span> 🎮.
     </p>
     <h2 class="skillTitle">My Skills:</h2>
-    <SkillItem />
+    <SkillList />
   </section>
-  <img data-aos="fade-right" class="imgLogo2" src={Photo} alt="Logo" />
+  <img class="imgLogo2" src={Photo} alt="Logo" />
 </div>
 
 <style>
   .about {
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 100%;

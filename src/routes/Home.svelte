@@ -1,12 +1,12 @@
 <script>
   // @ts-nocheck
-  let Ellipse = "assets/Ellipse1.png";
   let CV = "../../assets/CV.pdf";
   import "aos/dist/aos.css";
+  import BackgroundEffect from "../components/BackgroundEffect.svelte";
   import Typewriter from "svelte-typewriter";
 </script>
 
-<img class="ellipse" src={Ellipse} alt="ellipse" />
+<BackgroundEffect />
 <div class="home" id="Home">
   <img
     data-aos="fade-down-right"
@@ -27,7 +27,12 @@
       </h3>
       <section class="buttonsSection">
         <a href={CV} class="btn" download="CV"> CV </a>
-        <a target="_blank" href="https://github.com/PitMac" class="btn">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/PitMac"
+          class="btn"
+        >
           GITHUB
         </a>
       </section>
@@ -41,12 +46,6 @@
     grid-template-columns: 1fr 2fr;
     margin: auto;
     width: 80%;
-    height: 100vh;
-  }
-
-  .ellipse {
-    position: absolute;
-    z-index: -1;
     height: 100vh;
   }
 
@@ -88,9 +87,6 @@
   }
 
   @media (max-width: 1100px) {
-    .ellipse {
-      display: none;
-    }
     .buttonsSection {
       flex-direction: column;
     }

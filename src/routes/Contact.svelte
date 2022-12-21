@@ -6,6 +6,7 @@
 <div id="Contact" class="contact">
   <a
     target="_blank"
+    rel="noreferrer"
     href="https://www.linkedin.com/in/jhon-pita-macias-64362b217/"
     class="contactItem"
   >
@@ -13,6 +14,7 @@
   </a>
   <a
     target="_blank"
+    rel="noreferrer"
     href="https://www.facebook.com/jhondavid.pitamacias.7"
     class="contactItem"
   >
@@ -25,14 +27,25 @@
   >
     <i class="fa-solid fa-at fa-2x" />
   </button>
-  <a target="_blank" href="https://github.com/PitMac" class="contactItem">
+  <a
+    target="_blank"
+    rel="noreferrer"
+    href="https://github.com/PitMac"
+    class="contactItem"
+  >
     <i class="fa-brands fa-telegram fa-2x" />
   </a>
-  <a target="_blank" href="https://wa.link/nibap6" class="contactItem">
+  <a
+    target="_blank"
+    rel="noreferrer"
+    href="https://wa.link/nibap6"
+    class="contactItem"
+  >
     <i class="fa-brands fa-whatsapp fa-2x" />
   </a>
   <a
     target="_blank"
+    rel="noreferrer"
     href="https://www.youtube.com/channel/UCJSIzpSUsxZYyJoHxYk_hLA"
     class="contactItem"
   >
@@ -45,17 +58,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    padding: 0 25%;
-    margin: 20px auto;
+    padding: 20px 25%;
     background-color: var(--primary-color);
     padding-top: 30px;
-  }
-
-  hr {
-    margin-top: 20px;
-    height: 2px;
-    background-color: var(--bg-color);
-    border: none;
   }
 
   .contact button {

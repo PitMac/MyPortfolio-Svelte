@@ -105,7 +105,6 @@
     }
 
     .show {
-      /* z-index: 2; */
       transform: translateX(-200px);
     }
 

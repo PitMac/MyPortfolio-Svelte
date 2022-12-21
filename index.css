@@ -8,10 +8,11 @@
 }
 
 :root {
-  --primary-color: #16161e;
-  --secondary-color: #2196f3;
+  --primary-color: #111116;
+  --secondary-color: #1f8ee9;
   --text-color: #eeeeee;
   --bg-color: #393e46;
+  --hover-color: #2195f393;
 }
 
 body {
@@ -67,6 +68,13 @@ h3 {
   text-decoration: none;
   transition: border 1s;
   width: 190px;
+  background-color: var(--primary-color);
+}
+hr {
+  margin-top: 20px;
+  height: 2px;
+  background-color: var(--bg-color);
+  border: none;
 }
 
 .btn:hover {
