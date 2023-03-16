@@ -8,6 +8,7 @@ import RunMD from "../../public/assets/projects/runmd.webp";
 import PitKemon from "../../public/assets/projects/pitkemon.webp";
 import RunFMD from "../../public/assets/projects/RunFMD.webp";
 import FreeGamesRN from "../../public/assets/projects/FreeGamesRN.webp";
+import AntiPanico from "../../public/assets/projects/antipanico.webp";
 
 // Tech
 import Flutter from "../../public/assets/skills/flutter.svg";
@@ -52,10 +53,6 @@ export const technologies = [
   {
     src: Node,
     alt: "Node",
-  },
-  {
-    src: Astro,
-    alt: "Astro",
   },
   {
     src: Spring,
@@ -114,10 +111,6 @@ export const tools = [
     src: Figma,
     alt: "Figma",
   },
-  {
-    src: Linux,
-    alt: "Linux",
-  },
 ];
 
 export const projects = [
@@ -158,11 +151,11 @@ export const projects = [
   {
     id: 4,
     href: "https://github.com/PitMac/ECovid-App-Flutter",
-    src: Ecovid,
-    alt: "Ecovid App",
+    src: AntiPanico,
+    alt: "Anti-Panico Portoviejo",
     technologies: [technologies[1], languages[1], tools[0]],
     readme:
-      "It gathers information on covid cases that occurred in the pandemic, uses a public API and has a search engine by country.",
+      "An application made to help people who live in the city of Portoviejo and are present in an emergency situation.",
   },
   {
     id: 5,
@@ -210,5 +203,14 @@ export const projects = [
     technologies: [technologies[1], languages[1], tools[0]],
     readme:
       "This React Native application shows the new and the best free games in cross-platforms like Windows, Android, Linux, MacOs and IOS.",
+  },
+  {
+    id: 10,
+    href: "https://github.com/PitMac/ECovid-App-Flutter",
+    src: Ecovid,
+    alt: "Ecovid App",
+    technologies: [technologies[1], languages[1], tools[0]],
+    readme:
+      "It gathers information on covid cases that occurred in the pandemic, uses a public API and has a search engine by country.",
   },
 ];
